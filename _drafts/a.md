@@ -1,50 +1,22 @@
----
-layout: post
-title: "Jekyll vs. Blogger: ¿Por Qué tu Contenido Se Visualiza Inmediatamente en Sitios Estáticos?"
----
+Reparar el mundo
+"Reparar el mundo"- ¡Suena utópico, no? Pero es posible. Nosotros mismos somos un mundo completo, y en general, es difícil conocernos hasta a nosotros mismos, y mejorarnos como personas.
 
-<p>Si manejas tanto **Jekyll** con GitHub Pages como **Blogger**, probablemente has notado algo curioso: al publicar una nueva entrada, el contenido de Jekyll parece estar en línea casi de forma **instantánea**, mientras que Blogger puede tardar unos minutos en reflejar la actualización. Esto no es una ilusión, es una diferencia fundamental en la forma en que cada plataforma construye y sirve tu sitio web.</p>
+En esta guía, exploraremos paso a paso cómo lograrlo, basándonos en principios ancestrales, y siguiendo el método de estudio de lo general a lo particular.
 
-<section id="la-clave-sitios-estaticos">
-    <h2>La Clave: Generación Estática vs. Dinámica ⚙️</h2>
-    <p>La diferencia de velocidad se reduce a la arquitectura de la web que utiliza cada plataforma:</p>
+Principio fundamental
+Reparar el mundo
+Axiomas para la reparación
+Dejar de dañar
+Reparar lo dañado: Hacerse responsable y hacer lo posible, y lo imposible, llevarlo a la plegaria.
+Traer justicia y jésed al mundo. Ayudar a otros si lo solicitan, tanto en la acción, si está a nuestro alcance, o con plegaria.
 
-    <h3>Jekyll: El Constructor Estático 🧱</h3>
-    <p>Jekyll es un **Generador de Sitios Estáticos (SSG)**. Esto significa que:</p>
-    <ul>
-        <li><strong>Pre-compilación:</strong> Cuando escribes tu entrada en Markdown y la subes a GitHub (el proceso de <code>git push</code>), Jekyll compila *todo* el contenido en archivos HTML, CSS y JavaScript **finales**.</li>
-        <li><strong>Servicio Directo:</strong> GitHub Pages (que actúa como tu *hosting*) simplemente toma esos archivos HTML listos y los sirve al navegador del usuario. No hay bases de datos que consultar ni código de servidor que ejecutar en el momento de la solicitud.</li>
-        <li><strong>Resultado:</strong> La latencia es mínima. Tan pronto como la compilación de GitHub termina, el contenido está disponible globalmente, dando una sensación de **inmediatez total**.</li>
-    </ul>
+Mapa Conceptual Tora
 
-    <h3>Blogger: El Sistema Dinámico Tradicional 💾</h3>
-    <p>Blogger es un **Sistema de Gestión de Contenidos (CMS)** basado en una arquitectura dinámica, similar a WordPress. Aunque es muy rápido, su proceso es más complejo:</p>
-    <ul>
-        <li><strong>Procesamiento en el Servidor:</strong> Cuando publicas, Blogger debe almacenar la entrada en una **base de datos**.</li>
-        <li><strong>Cálculo Dinámico:</strong> Cada vez que un usuario visita tu página, el servidor de Blogger debe consultar la base de datos, mezclar la información con la plantilla de diseño y **generar el archivo HTML** para esa solicitud.</li>
-        <li><strong>Propagación de Caché:</strong> Este proceso de generación, almacenamiento y distribución a través de sus **servidores de caché** globales (CDN) puede tardar unos minutos en propagarse completamente, causando el pequeño retraso que percibes.</li>
-    </ul>
-</section>
+¿Qué es dañar?
+Vemos en el diagrama que para dejar de dañar, necesitamos saber qué es dañar, y para eso es necesario creer que la Torá es la instrucción de vida, ya que sin esa fe, nuestra lógica humana, siendo limitada, puede llevarnos a conclusiones erroneas sobre la ética o lo correcto, como ha pasado innumerables veces en la historia hasta la actualidad.
 
-<hr>
+La Torá nos indicará quién somos hoy, y quién debemos ser: autoconocimiento. Nos dará las pautas y el camino a seguir. Ya que la Torá no es un libro de historias, sino un detallado manual de vida de cada asunto en la vida, y la idea es que vayamos desglosándolo progresivamente.
 
-<section id="velocidad-vs-flexibilidad">
-    <h2>Velocidad de Despliegue vs. Flexibilidad</h2>
-    <p>Ambos sistemas tienen sus méritos, pero si tu enfoque es la **velocidad de despliegue** y la **eficiencia técnica** (como es el caso en StairwayCL), Jekyll lleva la delantera.</p>
-    <ul>
-        <li>**Usa Jekyll cuando:** Priorices la seguridad, la velocidad de carga (ya que son solo archivos estáticos) y la publicación inmediata para artículos y documentación técnica.</li>
-        <li>**Usa Blogger cuando:** Necesites una interfaz de edición más visual y una gestión de usuarios más sencilla sin manejar Git.</li>
-    </ul>
-</section>
+Recomendamos leer "En el jardín de la fe" del rab Shalom Arush y la Parte I: Fundamentos de fe en "The Divine Code" del Rab Moshé Weiner para comprender a profundidad los fundamentos.
 
-<hr>
-
-<section id="llamada-a-la-accion">
-    <h2>El Último Paso: Notificar a Google (Sitemaps)</h2>
-    <p>A pesar de la velocidad de Jekyll, recuerda que la **indexación** por parte de Google (el aparecer en los resultados de búsqueda) es un proceso separado. Un Sitemap correcto le asegura a Google que conoces todas tus páginas, optimizando aún más el tiempo de rastreo. ¡Nunca lo omitas!</p>
-</section>
-
-
-
-
-<p>¿Prefieres la inmediatez de la web estática o la gestión de la dinámica? Comparte tu flujo de trabajo con nosotros.</p>
+Para el autoconocimiento recomendamos estudiar el "Orjot Tzadikim" y el "Tanya" del Alter Rebe.

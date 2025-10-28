@@ -1,29 +1,28 @@
 ---
 layout: post
-title:  "Welcoe to Jekyll!"
+title:  "Lluvia de ideas Noé"
 date:   2025-10-28 03:53:45 -0300
-categories: jekyll update
+categories: parashá
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Reparar el mundo
+"Reparar el mundo"- ¡Suena utópico, no? Pero es posible. Nosotros mismos somos un mundo completo, y en general, es difícil conocernos hasta a nosotros mismos, y mejorarnos como personas.
 
-Jekyll requires blog post files to be named according to the following format:
+En esta guía, exploraremos paso a paso cómo lograrlo, basándonos en principios ancestrales, y siguiendo el método de estudio de lo general a lo particular.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Principio fundamental
+Reparar el mundo
+Axiomas para la reparación
+Dejar de dañar
+Reparar lo dañado: Hacerse responsable y hacer lo posible, y lo imposible, llevarlo a la plegaria.
+Traer justicia y jésed al mundo. Ayudar a otros si lo solicitan, tanto en la acción, si está a nuestro alcance, o con plegaria.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Mapa Conceptual Tora
 
-Jekyll also offers powerful support for code snippets:
+¿Qué es dañar?
+Vemos en el diagrama que para dejar de dañar, necesitamos saber qué es dañar, y para eso es necesario creer que la Torá es la instrucción de vida, ya que sin esa fe, nuestra lógica humana, siendo limitada, puede llevarnos a conclusiones erroneas sobre la ética o lo correcto, como ha pasado innumerables veces en la historia hasta la actualidad.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+La Torá nos indicará quién somos hoy, y quién debemos ser: autoconocimiento. Nos dará las pautas y el camino a seguir. Ya que la Torá no es un libro de historias, sino un detallado manual de vida de cada asunto en la vida, y la idea es que vayamos desglosándolo progresivamente.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Recomendamos leer "En el jardín de la fe" del rab Shalom Arush y la Parte I: Fundamentos de fe en "The Divine Code" del Rab Moshé Weiner para comprender a profundidad los fundamentos.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Para el autoconocimiento recomendamos estudiar el "Orjot Tzadikim" y el "Tanya" del Alter Rebe.
