@@ -1,15 +1,19 @@
 ---
 layout: post
-title:  "Lluvia de ideas Noé"
+title:  "El Objetivo de la Vida: Reparar el Mundo"
 date:   2025-10-28 03:53:45 -0300
 categories: parashá
 ---
 Reparar el mundo
+============
+
 "Reparar el mundo"- ¡Suena utópico, no? Pero es posible. Nosotros mismos somos un mundo completo, y en general, es difícil conocernos hasta a nosotros mismos, y mejorarnos como personas.
 
 En esta guía, exploraremos paso a paso cómo lograrlo, basándonos en principios ancestrales, y siguiendo el método de estudio de lo general a lo particular.
 
 Principio fundamental
+------
+
 Reparar el mundo
 Axiomas para la reparación
 Dejar de dañar
