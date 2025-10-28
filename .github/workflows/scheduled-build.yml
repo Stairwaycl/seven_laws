@@ -3,7 +3,7 @@ name: Forzar Recompilación Programada
 on:
   # Se ejecuta a las 11:00, 16:00 y 21:00 UTC (8 AM, 1 PM y 6 PM -03:00)
   schedule:
-    - cron: '0 11,16,21 * * *'
+    - cron: '35 16 * * *'
 
   # Permite la ejecución manual si lo deseas
   workflow_dispatch:
