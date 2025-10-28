@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Formato title en Jekyll"
-date: 2025-10-28 12:55:00 -0300
+date: 2025-10-28 13:14:59 -0300
 ---
 
 primero escribir el front matter, y dentro va el ```title: "Texto de título"```.

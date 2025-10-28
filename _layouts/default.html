@@ -1,0 +1,48 @@
+<html>
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2RQZML4SRH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2RQZML4SRH');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ page.title }} | {{ site.title }}</title>
+
+<link rel="stylesheet" href="/assets/css/styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+
+<link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+{% if jekyll.environment == "production" %}
+  <script src="my-analytics-script.js"></script>
+{% endif %}
+
+{% feed_meta %}
+{% seo %} <!--- Este plugin se encarga automáticamente de generar los meta tags Open Graph (para Facebook y WhatsApp, entre otros) y Twitter Cards, siempre y cuando hayas configurado correctamente la información en tu _config.yml y en el front matter de tus posts. -->
+
+<meta name="google-site-verification" content="lBIgVfsUr5F_T_KrfOJzzkxCTZBnMIrNPw-J1tvUKHA" />
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5089948218661025"
+     crossorigin="anonymous"></script>
+
+
+</head>
+<body class="highlight-area{% if page.url == '/blog.html' or page.layout == 'post' %} blog-background-gris{% endif %}">
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+
+
+</body>
+</html>
