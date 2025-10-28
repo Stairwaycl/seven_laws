@@ -1,0 +1,26 @@
+name: Forzar Recompilación Programada
+
+on:
+  # Se ejecuta a las 11:00, 16:00 y 21:00 UTC (8 AM, 1 PM y 6 PM -03:00)
+  schedule:
+    - cron: '0 11,16,21 * * *'
+
+  # Permite la ejecución manual si lo deseas
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }} # Token de seguridad provisto por GitHub
+
+      - name: Forzar Recompilación (Push Vacío)
+        # Crea un commit que no contiene cambios, pero dispara una nueva compilación de Jekyll.
+        run: |
+          git config user.name "Jekyll Scheduler Bot"
+          git config user.email "actions@github.com"
+          git commit --allow-empty -m "🤖 Forzando recompilación programada para publicar posts."
+          git push
