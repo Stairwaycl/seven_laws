@@ -16,9 +16,7 @@ layout: default
 
     {% if post_date <= current_date %}
 
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-
+      <lu>
         <div class="card" style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">{{post.title}}</h5>
@@ -27,7 +25,7 @@ layout: default
             <a href="{{ post.url }}">Leer más</a>
           </div>
         </div>
-      </li>
+      </lu>
     {% endif %}
   {% endfor %}
 </ul>
