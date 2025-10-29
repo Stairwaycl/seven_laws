@@ -11,7 +11,6 @@ layout: default
 
     {%- assign post_date = post.date | date: "%s" -%}
 
-
     {%- assign current_date = 'now' | date: "%s" -%}
 
 
@@ -19,11 +18,16 @@ layout: default
 
       <li>
         <a href="{{ post.url }}">{{ post.title }}</a>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+
+            <p class="card-text">{{post.excerpt}}</p>
+            <a href="{{ post.url }}">Leer más</a>
+          </div>
+        </div>
       </li>
-
     {% endif %}
-
-
-
   {% endfor %}
 </ul>

@@ -1,0 +1,15 @@
+body {
+  background-color: #e3d5d5;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.card-body {
+  background-color: #e1b4bc;
+}
