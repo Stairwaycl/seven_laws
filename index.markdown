@@ -5,27 +5,37 @@
 layout: default
 ---
 
-<ul>
-  {% for post in site.posts %}
+<div class="container my-5">
 
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-    {%- assign post_date = post.date | date: "%s" -%}
+    {% for post in site.posts %}
 
-    {%- assign current_date = 'now' | date: "%s" -%}
+      {%- assign post_date = post.date | date: "%s" -%}
+      {%- assign current_date = 'now' | date: "%s" -%}
 
+      {% if post_date <= current_date %}
 
-    {% if post_date <= current_date %}
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
 
-      <lu>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">{{post.title}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">
+                {{ post.date | date: "%d %b %Y" }}
+              </h6>
 
-            <p class="card-text">{{post.excerpt}}</p>
-            <a href="{{ post.url }}">Leer más</a>
+              <h5 class="card-title">{{ post.title }}</h5>
+
+              <p class="card-text">{{ post.excerpt }}</p>
+
+            </div>
+            <div class="card-footer bg-white border-0">
+                <a href="{{ post.url }}" class="btn btn-primary">Leer más</a>
+            </div>
           </div>
         </div>
-      </lu>
-    {% endif %}
-  {% endfor %}
-</ul>
+
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
