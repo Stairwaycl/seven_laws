@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "Interpretación de Sueños"
-tags: [Pitrón HaJalomót, Berajot, Die Traumdeutung, Sigmund Freud, Carl Jung, Rabí Shlomó Almolí]
+category: Sueños
+tags: [Berajot, Misticismo, Psicología]
+authors: [Sigmund Freud, Carl Jung, Rabí Shlomó Almolí]
+references: [Pitrón HaJalomót, Die Traumdeutung, Talmud - Berajot]
 ---
 Estudiaremos basados en los diferentes sueños que presenta la Torá escrita y  la torá oral en _Masejet Berajot 9_ y otras fuentes judías, como la obra Pitrón Hajalomot.
 
@@ -106,3 +109,36 @@ Otro de los significados lo vemos en:
 Soñar que mantiene relaciones con su madre es señal de inteligencia. ya que expone el versículo:
 
 _“pues ‘madre’ llamarás a la inteligencia” (Mishlé/Prov. 2:3)._
+
+{% comment %}
+    Este bloque verifica si existen las nuevas listas de clasificación (authors/references)
+    y las muestra de forma estructurada.
+{% endcomment %}
+
+{% if page.authors or page.references %}
+<div class="post-references mt-5 pt-3 border-top">
+    <h3>Fuentes y Mentores Clave</h3>
+
+    {% if page.authors %}
+    <p class="small">
+        <strong>Sabios mencionados:</strong>
+        {% for autor in page.authors %}
+            {{ autor }}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+    </p>
+    {% endif %}
+
+    {% if page.references %}
+    <p class="small">
+        <strong>Fuentes del Texto:</strong>
+        {% for libro in page.references %}
+
+            <a href="/bibliography/#{{ libro | slugify }}" title="Ver detalles en la Bibliografía Central">
+                {{ libro }}
+            </a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+    </p>
+    {% endif %}
+
+</div>
+{% endif %}
