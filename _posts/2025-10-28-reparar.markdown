@@ -2,8 +2,7 @@
 layout: post
 title:  "El Objetivo de la Vida: Reparar el Mundo"
 date:   2025-10-28 03:53:45 -0300
-categories: parashá
-tag: reparar
+tag: tikún
 ---
 ¿Suena utópico, no? Pero es posible. Nosotros mismos somos un mundo completo.
 

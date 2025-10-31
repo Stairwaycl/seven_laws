@@ -1,5 +1,5 @@
 body {
-  background-color: #F5F3F5;
+  background-color: #938d93;
 }
 
 h2 {
@@ -13,4 +13,24 @@ p {
 .card-body {
   background-color: #F5F3F5;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-posts {
+  background-color: #F5F3F5
+}
+
+/*
+ * 1. CLASE BASE: Asegura que la transición sea suave.
+ * La transición debe aplicarse a la propiedad 'transform' o 'top' (usamos top en este caso).
+ */
+ .fixed-top {
+  transition: top 0.3s; /* Transición suave de 0.3 segundos */
+}
+
+/*
+* 2. CLASE DE OCULTACIÓN: Mueve la barra fuera del viewport.
+* Definimos 'top' para que esté justo arriba del borde superior.
+*/
+.nav-hidden {
+  top: -65px; /* Ajusta este valor. Debe ser mayor que la altura de tu barra de navegación. */
 }

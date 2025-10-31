@@ -1,0 +1,68 @@
+---
+layout: default
+title: "Solo Para Hombres: Desarrollo y Carácter"
+---
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+
+            <h1 class="display-5 text-center mb-4">Solo Para Hombres</h1>
+            <p class="lead text-center mb-5">
+                Una serie basada en la Torá y los textos clásicos para guiar la vida y el carácter.
+            </p>
+
+            <hr>
+
+            <h2 class="h4 mb-4">Artículos de la Serie:</h2>
+
+            {% comment %}
+                Punto CRÍTICO: La categoría objetivo ahora es 'hombres' (minúsculas)
+                para coincidir con el front matter de tus posts.
+            {% endcomment %}
+
+            {% assign target_category = 'hombres' %}
+
+            {% comment %}
+                Creamos la lista filtrada de posts con la categoría 'hombres'
+            {% endcomment %}
+
+            {% assign posts_in_category = site.posts | where_exp: "post", "post.category == target_category or post.categories contains target_category" %}
+
+            <ul class="list-unstyled card-body p-3">
+
+            {% for post in posts_in_category %}
+
+                <li class="py-3 border-bottom">
+                    <h3 class="h5 mb-1">
+                        <a href="{{ post.url | relative_url }}" class="text-decoration-none text-dark fw-bold">
+                            {{ post.title }}
+                        </a>
+                    </h3>
+
+                    {% comment %}
+                        Formato de fecha ajustado a: "31 Oct 2025"
+                        %e: día sin ceros a la izquierda, %b: mes abreviado, %Y: año
+                    {% endcomment %}
+                    <p class="small text-muted mb-2">
+                        Publicado: {{ post.date | date: "%e %b %Y" }}
+                    </p>
+
+                    <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+
+                    <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-outline-primary">Continuar Leyendo &rarr;</a>
+                </li>
+
+            {% endfor %}
+
+            </ul>
+
+            {% if posts_in_category.size == 0 %}
+            <div class="alert alert-info" role="alert">
+                Aún no hay artículos publicados en esta serie. ¡Vuelve pronto!
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

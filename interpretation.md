@@ -115,9 +115,10 @@ _“pues ‘madre’ llamarás a la inteligencia” (Mishlé/Prov. 2:3)._
     y las muestra de forma estructurada.
 {% endcomment %}
 
+
 {% if page.authors or page.references %}
 <div class="post-references mt-5 pt-3 border-top">
-    <h3>Fuentes y Mentores Clave</h3>
+    <h3>Referencias</h3>
 
     {% if page.authors %}
     <p class="small">

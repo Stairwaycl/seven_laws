@@ -37,4 +37,20 @@ En esta sección, centralizamos los libros y textos fundamentales que utilizamos
 
 **Resumen:** Este tratado se enfoca principalmente en las leyes de las bendiciones y la oración. Incluye secciones clave que discuten la naturaleza profética de los sueños, las plegarias por los sueños y los ritos para resolver un mal sueño.
 
-**Referencia Clave:** Fundamental para las Leyes Noájidas y para entender la visión clásica de los sueños.
+---
+
+### Preceptos para las Naciones
+
+#### <a id="divine-code"></a> The Divine Code
+**Autor:** Rabi Moshé Weiner
+
+**Resumen:** Shuljan Aruj para Bnei Noaj.
+
+---
+
+### Paz matrimonial
+
+#### <a id="en-el-jardín-de-la-paz"></a> En el jardín de la Paz
+**Autor:** Rabi Shalom Arush
+
+**Resumen:** Obligatorio para todo hombre.
