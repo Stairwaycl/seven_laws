@@ -1,13 +1,11 @@
 ---
 layout: default
-title: "Bibliografía y Recursos Fundamentales"
+title: "📚 Bibliografía y Recursos Fundamentales"
 ---
-
-## 📚 Bibliografía y Fuentes de Estudio
 
 En esta sección, centralizamos los libros y textos fundamentales que utilizamos para las series de las Leyes Noájidas y la Interpretación de Sueños. Haz clic en el título para saber más y apoyar el sustento digital del canal.
 
----
+
 
 ### Interpretación de Sueños y Cábala
 

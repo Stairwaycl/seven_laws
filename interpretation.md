@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: default
 title: "Interpretación de Sueños"
 category: Sueños
 tags: [Berajot, Misticismo, Psicología]
 authors: [Sigmund Freud, Carl Jung, Rabí Shlomó Almolí]
 references: [Pitrón HaJalomót, Die Traumdeutung, Talmud - Berajot]
 ---
+
 Estudiaremos basados en los diferentes sueños que presenta la Torá escrita y  la torá oral en _Masejet Berajot 9_ y otras fuentes judías, como la obra Pitrón Hajalomot.
 
 ## Introducción

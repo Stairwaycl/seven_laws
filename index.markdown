@@ -5,10 +5,11 @@
 layout: default
 ---
 
+# Publicaciones
 
 <div class="container my-5">
 
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+  <div class="row row-cols-1 g-4">
 
     {% for post in site.posts %}
 
@@ -30,7 +31,7 @@ layout: default
               <p class="card-text">{{ post.excerpt }}</p>
 
             </div>
-            <div class="card-footer bg-white border-0">
+            <div class="card-footer border-0">
                 <a href="{{ post.url }}" class="btn btn-primary">Leer más</a>
             </div>
           </div>

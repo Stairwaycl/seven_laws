@@ -1,18 +1,24 @@
 body {
-  background-color: #938d93;
+  background-color: #ffe6ff;
 }
 
-h2 {
+h1 {
   text-align: center;
+  padding-top: 0.3em;
 }
 
 p {
   text-align: justify;
+
 }
 
 .card-body {
   background-color: #F5F3F5;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer {
+  background-color: #020e39;
 }
 
 .container-posts {
@@ -33,4 +39,11 @@ p {
 */
 .nav-hidden {
   top: -65px; /* Ajusta este valor. Debe ser mayor que la altura de tu barra de navegación. */
+}
+
+.bonheur-royale-regular {
+  font-family: "Bonheur Royale", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1.4em;
 }
