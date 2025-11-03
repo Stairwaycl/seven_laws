@@ -3,7 +3,11 @@ layout: default
 ---
 
 <p>
-  {{ page.date | date_to_string }}
+  Publicado: {{ page.date | date_to_string }}
+
+  {% if page.last_modified_at and page.last_modified_at != page.date %}
+    <br><small class="text-muted">Última Actualización: {{ page.last_modified_at | date: "%d de %B de %Y" }}</small>
+  {% endif %}
 </p>
 
 <div class="container rounded-2 p-3 shadow-lg container-posts">
