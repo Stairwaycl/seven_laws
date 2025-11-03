@@ -23,7 +23,12 @@ layout: default
             <div class="card-body">
 
               <h6 class="card-subtitle mb-2 text-muted">
-                {{ post.date | date: "%d %b %Y" }}
+                {% assign display_date = post.date %}
+                {% if post.last_modified_at %}
+                  {% assign display_date = post.last_modified_at %}
+                {% endif %}
+
+                {{ display_date | date: "%d %b %Y" }}
               </h6>
 
               <h5 class="card-title">{{ post.title }}</h5>

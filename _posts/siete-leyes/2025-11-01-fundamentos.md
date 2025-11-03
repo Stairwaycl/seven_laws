@@ -3,7 +3,7 @@ layout: post
 title: "Primer principio de fe | Maimónides."
 category: siete-leyes
 date: 2025-11-01 10:00:00 -0300
-last_modified_at: 2025-11-02 10:30:00 -0300
+last_modified_at: 2025-11-02 22:30:00 -0300
 ---
 El Primer Principio mencionado en el comentario de Maimónides a la Mishná Sanhedrín 10, es creer en la existencia del Creador, Bendito Sea.
 
