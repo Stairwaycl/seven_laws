@@ -15,7 +15,7 @@ Y este Primer Fundamento está indicado por la expresión:
 
 _"Yo soy Hashem tu Dios (Anoji HaShem Elokeja)._ ( Éxodo/Shmot 20:2 ).
 
-# Continuará. Visitenos diario.
+
 ### El segundo principio,
 la unidad de Dios, bendito sea, significa que creemos que Aquel que es la causa de todo es uno. Y Él no es como uno de dos, ni como uno de un grupo, ni como una persona que puede dividirse en muchas unidades más pequeñas, ni como un cuerpo simple que, aunque numéricamente uno, puede dividirse infinitamente. Más bien, Él —Dios, bendito sea— es uno en una unidad sin parangón. Este es el segundo principio, indicado por las palabras: «Escucha, Israel: El Señor es nuestro Dios; el Señor es uno».
 
