@@ -28,7 +28,7 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.seven-laws.onrender.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  stairwaycl
 
 social_image: /assets/images/dreamsseo.png
 
@@ -36,7 +36,18 @@ social_image: /assets/images/dreamsseo.png
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2 # Añadir o reemplazar el plugin antiguo
 
+pagination: # Nueva sección de configuración
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  limit: 0 # 0 para paginar todos los posts
+  # ESTO ES LO QUE TE INTERESA:
+  collection: 'posts' # Indica que paginará TODOS los posts de _posts
+  # Opcionalmente, puedes paginar solo una categoría específica, por ejemplo:
+  # category: 'dreams'
+  sort_reverse: true
 
 future: true
 # Exclude from processing.
