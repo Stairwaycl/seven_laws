@@ -4,6 +4,7 @@ title: "Calendario onírico"
 category: dreams
 date: 2025-11-02 10:00:00 -0300
 last_modified_at: 2025-11-02 10:00:00 -0300
+description: Descubre si tus sueños se harán realidad. Usa el Calendario Onírico basado en el ciclo lunar hebreo para saber qué días tus sueños son verdaderos, cuáles son falsos y cuándo prometen alegría.
 ---
 
 Este diccionario debe priorizar analizar el día antes de interpretar. Los días son en base al calendario judío, que son meses fijados en base al ciclo lunar:
