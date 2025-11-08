@@ -30,7 +30,7 @@ url: "https://www.seven-laws.onrender.com" # the base hostname & protocol for yo
 twitter_username: jekyllrb
 github_username:  stairwaycl
 
-social_image: /assets/images/dreamsseo.png
+social_image: https://res.cloudinary.com/ddky4mrmg/image/upload/v1762559661/jekyll-uploads/cssnrjuyzoeseqedozgo.png
 
 # Build settings
 theme: minima
