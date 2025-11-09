@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
-  <div class="container-fluid justify-content-between">
+  <div class="container-fluid">
 
     <a href="/" class="navbar-brand text-decoration-none text-dark d-flex align-items-center">
       <img
@@ -16,18 +16,18 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
+        {% for item in site.data.navigation %}
+
         <li class="nav-item">
-          <a href="/solo-hombres.html" class="nav-link">Solo hombres</a>
+          <a class="nav-link {% if page.url == item.link %} active {% endif %}"
+             href="{{ item.link }}"
+             {% if page.url == item.link %} aria-current="page" {% endif %}
+          >
+            {{ item.name }}
+          </a>
         </li>
-        <li class="nav-item">
-          <a href="/interpretation.html" class="nav-link">Interpretación de sueños</a>
-        </li>
-        <li class="nav-item">
-          <a href="/siete-leyes.html" class="nav-link">Siete Leyes</a>
-        </li>
-        <li class="nav-item">
-          <a href="/bibliography.html" class="nav-link">Bibliografía general</a>
-        </li>
+
+        {% endfor %}
       </ul>
     </div>
 

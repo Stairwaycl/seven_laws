@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Mail a Ask Noah consultando por Hajavat Jalóm para Noájidas"
+category: sueños
+
 ---
 
 Esta publicación contiene la respuesta oficial de **Ask Noah International** a una consulta sobre la aplicación de **Hatavat Jalóm (Anulación de un Mal Sueño)** para los Noájidas. Compartimos el correo electrónico íntegro tal como fue recibido, para total transparencia y autenticidad.

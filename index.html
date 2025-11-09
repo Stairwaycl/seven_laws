@@ -1,8 +1,7 @@
 ---
 # IMPORTANTE: Con esto le dices a Jekyll que use la configuración de paginación.
 layout: default
-pagination:
-  enabled: true
+title: "Home"
 ---
 
 
@@ -46,28 +45,4 @@ pagination:
   </div>
 </div>
 
-<div class="container my-4">
-    <div class="d-flex justify-content-between align-items-center">
-
-        {% if paginator.previous_page %}
-            <a class="btn btn-outline-secondary" href="{{ paginator.previous_page_path | relative_url }}">
-                &larr; Recientes
-            </a>
-        {% else %}
-            <span class="btn btn-outline-secondary disabled">&larr; Recientes</span>
-        {% endif %}
-
-        <span class="text-muted">
-            Página {{ paginator.page }} de {{ paginator.total_pages }}
-        </span>
-
-        {% if paginator.next_page %}
-            <a class="btn btn-outline-secondary" href="{{ paginator.next_page_path | relative_url }}">
-                Antiguos &rarr;
-            </a>
-        {% else %}
-            <span class="btn btn-outline-secondary disabled">Antiguos &rarr;</span>
-        {% endif %}
-
-    </div>
-</div>
+{% include paginator.html %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Diccionario de Sueños"
-category: dreams
+category: sueños
 date:   2025-11-03 03:53:45 -0300
 description: Diccionario de Sueños según el Talmud. Descubre el significado de soñar con la muerte, granadas o dientes, pero ¡cuidado! La interpretación depende primero del día del calendario.
 ---
@@ -22,6 +22,17 @@ _Y si es un ignorante, sin duda realizará actos de bien, como expone el versíc
 _'cual granada partida son tus rakatéj' (textualmente sienes o mejillas)._
 
 _¿Y qué significa rakatéj? Que incluso los ignorantes del pueblo (reikaním, voz emparentada con rakatéj) están colmados de buenas acciones como semillas una granada."_
+
+
+## Diente
+
+**Soñar que le crecieron los dientes** es algo bueno para él, o bien experimentará una gran salvación. (Pues los dientes aportan a la alimentación adecuada).
+
+**Soñar que se le cae un diente** es indicador de **muerte.** (Ya que los dientes sirven para alimentarse y vivir sanamente). _Si le duele, significa que sufrirá mucho la muerte; y si no le duele significa que no sufrirá._
+
+**Soñar que un diente se le mueve** indica **enfermedad.** (Así como la caída de un diente indica muerte, un diente flojo indica enfermedad).
+
+**El que sueña con un diente negro** sufrirá una desgracia.
 
 
 ## Muerte
@@ -71,12 +82,8 @@ Soñar que un muerto lo golpea es indicio de sufrimientos.
 
 Soñar que un muerto le quiere dar algo y él no lo toma, es un mal indicio.
 
-## Diente
+## Sexo
 
-**Soñar que le crecieron los dientes** es algo bueno para él, o bien experimentará una gran salvación. (Pues los dientes aportan a la alimentación adecuada).
+Soñar que mantiene relaciones con su madre es señal de inteligencia. ya que expone el versículo:
 
-**Soñar que se le cae un diente** es indicador de **muerte.** (Ya que los dientes sirven para alimentarse y vivir sanamente). _Si le duele, significa que sufrirá mucho la muerte; y si no le duele significa que no sufrirá._
-
-**Soñar que un diente se le mueve** indica **enfermedad.** (Así como la caída de un diente indica muerte, un diente flojo indica enfermedad).
-
-**El que sueña con un diente negro** sufrirá una desgracia.
+_“pues ‘madre’ llamarás a la inteligencia” (Mishlé/Prov. 2:3)._

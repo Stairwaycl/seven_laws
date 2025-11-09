@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Frase para neutralizar malos sueños"
+category: sueños
+
 ---
 
 וַחֲלֹמוֹת הַשָּׁוְא יְדַבֵּרוּ (va-jalōmōt ha-sháv y'dabbērū), que significa: "y los sueños de vanidad/falsedad/necedad hablarán."
