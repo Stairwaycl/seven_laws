@@ -3,25 +3,34 @@ layout: post
 title: "Diccionario de Sueños"
 category: sueños
 date:   2025-11-03 03:53:45 -0300
-description: Diccionario de Sueños según el Talmud. Descubre el significado de soñar con la muerte, granadas o dientes, pero ¡cuidado! La interpretación depende primero del día del calendario.
+description: Diccionario de sueños según el Talmud. ¡Cuidado! La interpretación depende primero del día del calendario. Descubre el significado de soñar con la muerte, granadas o dientes, etc.
 ---
 
 En cada interpretación debe analizarse el día en que ocurrió el sueño, por sobre el significado, ya que depende del día si es un sueño efectivo o no. [Revisar calendario onírico]({% post_url 2025-11-02-calendario-dream %})
 
+## 📖 Contenido
+
+* [Granadas](#granadas)
+* [Diente](#diente)
+* [Muerte](#muerte)
+* [Sexo](#sexo)
+
+---
 
 Las imágenes oníricas, los símbolos que visualizamos en nuestros sueños, tienen significados distintos según cada soñante; y de hecho, así lo plantea el Talmud en _Berajot 57a_, y ofrece varios ejemplos, entre los cuales citamos el siguiente acerca de soñar con granadas:
+"_Las imágenes oníricas, los símbolos que visualizamos en nuestros sueños, tienen significados distintos según cada soñante; y de hecho, así lo plantea el Talmud en _Berajot 57a_, y ofrece varios ejemplos, entre los cuales citamos el siguiente acerca de soñar con granadas:
 
 ## Granadas
 
-_"El que sueña con granadas partidas al medio, si es un sabio que aguarde adquirir mayores conocimientos de Torá, como expone el versículo:_
-
-_'Te daré de beber vino aromático, jugo de mis granadas'. Expresiones que aluden a la Torá._
-
-_Y si es un ignorante, sin duda realizará actos de bien, como expone el versículo:_
-
-_'cual granada partida son tus rakatéj' (textualmente sienes o mejillas)._
-
-_¿Y qué significa rakatéj? Que incluso los ignorantes del pueblo (reikaním, voz emparentada con rakatéj) están colmados de buenas acciones como semillas una granada."_
+> "El que sueña con granadas partidas al medio, si es un sabio que aguarde adquirir mayores conocimientos de Torá, como expone el versículo:
+>
+> 'Te daré de beber vino aromático, jugo de mis granadas'. Expresiones que aluden a la Torá.
+>
+> Y si es un ignorante, sin duda realizará actos de bien, como expone el versículo:
+>
+> 'cual granada partida son tus rakatéj' (textualmente sienes o mejillas).
+>
+> ¿Y qué significa rakatéj? Que incluso los ignorantes del pueblo (reikaním, voz emparentada con rakatéj) están colmados de buenas acciones como semillas una granada."
 
 
 ## Diente
@@ -34,6 +43,7 @@ _¿Y qué significa rakatéj? Que incluso los ignorantes del pueblo (reikaním, 
 
 **El que sueña con un diente negro** sufrirá una desgracia.
 
+{% include call-bad-dreams.html %}
 
 ## Muerte
 Soñar que se muere **es un buen indicio para el soñante**, o bien, se incrementarán sus años de vida. Lo mismo, si sueña que un pariente fallece.
@@ -56,6 +66,9 @@ Soñar que habla con un muerto indica que el soñante hablará con gente buena y
 
 El que sueña que es mordido por un pariente fallecido, sufrirá una desgracia.
 
+{% include call-bad-dreams.html %}
+
+
 El que sueña que un pariente fallecido viene a visitarlo tendrá riqueza. Y si lo abraza o lo besa, mucho más.
 
 El que sueña que un muerto come y bebe en su casa, es una buena señal para la casa (porque significa que el muerto está conforme y cómodo allí.)
@@ -63,6 +76,9 @@ El que sueña que un muerto come y bebe en su casa, es una buena señal para la 
 El que sueña que un muerto le da algo tendrá ganancias. (Porque significa que está conforme con él.)
 
 El que sueña que un muerto le da de beber de la palma de su mano, indica muerte. (Porque el muerto indica lo etéreo, lo que ya no existe; mientras el vaso indica materialismo. Por ello, si toma de un vaso significa que todavía vivirá, porque necesita aún de la materia; pero si toma de la mano del muerto, que representa lo etéreo, significa que ya no volverá a requerir de lo material).
+
+{% include call-bad-dreams.html %}
+
 
 El que sueña que un muerto le entrega un elemento de metal, en cualquier lugar que se encuentre estará seguro y no deberá temer (pues ese elemento le brinda protección).
 

@@ -47,3 +47,13 @@ p {
   font-style: normal;
   font-size:1.4em;
 }
+
+/* Estilo para las citas de bloque (Blockquotes) */
+blockquote {
+  border-left: 4px solid #8b0000; /* Color vino o rojo oscuro */
+  background-color: #f9f9f9; /* Un fondo ligeramente gris */
+  margin: 1.5em 0; /* Espaciado superior e inferior */
+  padding: 0.5em 10px; /* Espaciado interno */
+  font-style: italic; /* Letra cursiva para citas */
+  color: #555; /* Un color de texto más suave */
+}
