@@ -1,45 +1,36 @@
 ---
 layout: default
+permalink: /siete-leyes/
 ---
-# Fundamentos del judaísmo según Maimónides.
+# 📜 Las Siete Leyes de Noaj
+1. Prohibición de la Idolatría
 
+2. Prohibición de la Blasfemia
+
+3. Prohibición del Asesinato
+
+4. Prohibición de las Relaciones Sexuales Ilícitas
+
+5. Prohibición del Robo
+
+6. Prohibición de Comer la Carne de un Animal Vivo
+
+7. Mandamiento de Establecer Tribunales de Justicia
+
+## Posts
 <div>
-    {% for post in site.posts %}
 
-      {%- assign post_date = post.date | date: "%s" -%}
-      {%- assign current_date = 'now' | date: "%s" -%}
+<ul>
+  {% for post in site.posts %}
 
-      {% comment %}
-        *** AÑADIR LA CONDICIÓN DE FILTRADO AQUÍ *** Usamos 'contains' ya que la propiedad 'categories' puede ser una lista.
-      {% endcomment %}
-      {% if post_date <= current_date and post.categories contains "siete-leyes" and post.slug == "fundamentos" %}
+    {% if post.category == 'siete-leyes' %}
+      <li>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+      </li>
+    {% endif %}
 
-        <div class="col">
-          <div>
-            <div>
-
-              <h6 class="card-subtitle mb-2 text-muted">
-                {{ post.date | date: "%d %b %Y" }}
-              </h6>
-
-              <h5 class="card-title">{{ post.title }}</h5>
-
-              <p class="card-text">
-                {% comment %} Si quieres el contenido COMPLETO, usa '.content' {% endcomment %}
-                {{ post.content }}
-              </p>
-
-            </div>
-          </div>
-        </div>
-
-        {% comment %}
-          *** DETENER EL BUCLE DESPUÉS DE ENCONTRAR EL POST ***
-          Como solo quieres UNO, usa 'break' para optimizar el rendimiento.
-        {% endcomment %}
-        {% break %}
-
-      {% endif %}
-    {% endfor %}
+  {% endfor %}
+</ul>
 
 </div>

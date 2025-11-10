@@ -19,14 +19,6 @@ En esta sección, centralizamos los libros y textos fundamentales que utilizamos
 
 ---
 
-#### <a id="die-traumdeutung"></a> Die Traumdeutung
-
-**Autor Principal:** Sigmund Freud.
-
-**Resumen:** Obra fundamental de la psicología moderna que introduce el concepto del inconsciente y el análisis de los sueños como "la vía regia hacia el conocimiento de lo inconsciente". Lo utilizamos para el contraste metodológico.
-
----
-
 ### Talmud y Textos Filosóficos
 
 #### <a id="talmud-berajot"></a> Talmud – Tratado Berajot (ברכות)
@@ -34,6 +26,15 @@ En esta sección, centralizamos los libros y textos fundamentales que utilizamos
 **Autor:** Compilado por Rabinos de la época talmúdica.
 
 **Resumen:** Este tratado se enfoca principalmente en las leyes de las bendiciones y la oración. Incluye secciones clave que discuten la naturaleza profética de los sueños, las plegarias por los sueños y los ritos para resolver un mal sueño.
+
+---
+
+
+#### <a id="die-traumdeutung"></a> Die Traumdeutung
+
+**Autor Principal:** Sigmund Freud.
+
+**Resumen:** Obra fundamental de la psicología moderna que introduce el concepto del inconsciente y el análisis de los sueños como "la vía regia hacia el conocimiento de lo inconsciente". Lo utilizamos para el contraste metodológico.
 
 ---
 
