@@ -3,8 +3,21 @@ body {
 }
 
 h1 {
-  text-align: center;
   padding-top: 0.3em;
+  font-size: 2.5rem; /* Tamaño de fuente grande */
+  font-weight: 300;  /* Peso de fuente ligero (por defecto en display) */
+  line-height: 1.2;  /* Altura de línea estándar */
+
+  /* --- Equivalente a 'text-center' --- */
+  text-align: center;
+
+  /* --- Equivalente a 'mb-4' --- */
+  /* En Bootstrap, 4 es típicamente igual a 1.5rem */
+  margin-bottom: 1.5rem;
+
+  /* Aseguramos que el margen superior y laterales sean 0,
+      ya que la clase mb-4 solo establece el margen inferior */
+  margin-top: 0;
 }
 
 p {
@@ -56,4 +69,42 @@ blockquote {
   padding: 0.5em 10px; /* Espaciado interno */
   font-style: italic; /* Letra cursiva para citas */
   color: #555; /* Un color de texto más suave */
+}
+
+/* Este CSS mejora el efecto hover en los enlaces individuales del menú */
+
+.nav-item {
+  /* Agrega una transición suave para todos los cambios de estilo */
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Estilo al pasar el cursor (hover) */
+.nav-item:hover {
+  /* 1. Cambia el color de fondo */
+  background-color:  #d4cad4; /* Color azul primario de Bootstrap (puedes cambiarlo) */
+
+  /* 2. Cambia el color del texto para que contraste con el nuevo fondo */
+  color:  #F5F3F5; /* Texto blanco */
+
+  /* 3. Asegura que no haya un box-shadow no deseado */
+  box-shadow: none;
+}
+
+/* Estilo al enfocar (focus) (importante para accesibilidad) */
+.nav-item:focus {
+  /* Generalmente es buena práctica mantener los estilos de hover y focus similares */
+  background-color: #007bff;
+  color:  #F5F3F5;
+
+  /* Puedes mantener el outline aquí o quitarlo si ya lo hiciste antes */
+  outline: 0;
+}
+
+.alert-icon {
+  /* Define un tamaño fijo. Puedes ajustar 1.25rem o 1em según tu gusto */
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+
+  /* Aseguramos que se alinee con el texto si hay algún problema */
+  vertical-align: -0.125em;
 }

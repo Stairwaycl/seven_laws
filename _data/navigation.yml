@@ -1,12 +1,15 @@
-- name: Solo hombres
-  link: /solo-hombres/
-- name: Interpretación de sueños
-  link: /interpretation/
-- name: Fundamentos
-  link: /13-principios/
-- name: Siete Leyes
-  link: /siete-leyes/
-- name: Bibliografia
-  link: /bibliography/
+noahide:
+  - name: Fundamentos
+    link: /13-principios/
+  - name: Siete Leyes
+    link: /siete-leyes/
+
+global:
+  - name: Solo Para Hombres
+    link: /solo-hombres/
+  - name: Interpretación de sueños
+    link: /interpretation/
+  - name: Bibliografia
+    link: /bibliography/
 # - name: historia
 #   link: /historia/

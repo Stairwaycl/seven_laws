@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-2">
   <div class="container-fluid">
 
     <a href="/" class="navbar-brand text-decoration-none text-dark d-flex align-items-center">
@@ -16,19 +17,36 @@
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        {% for item in site.data.navigation %}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Siete Leyes Internacionales Divinas
+          </a>
+          <ul class="dropdown-menu">
+            {% for item in site.data.navigation.noahide %}
+            <li class="nav-item ">
+              <a class="nav-link p-2  {% if page.url == item.link %} active {% endif %}"
+                 href="{{ item.link }}"
+                 {% if page.url == item.link %} aria-current="page" {% endif %}>
+                {{ item.name }}
+              </a>
+            </li>
 
+            {% endfor %}
+          </ul>
+        </li>
+
+        {% for item in site.data.navigation.global %}
         <li class="nav-item">
           <a class="nav-link {% if page.url == item.link %} active {% endif %}"
              href="{{ item.link }}"
-             {% if page.url == item.link %} aria-current="page" {% endif %}
-          >
+             {% if page.url == item.link %} aria-current="page" {% endif %}>
             {{ item.name }}
           </a>
         </li>
-
         {% endfor %}
+
       </ul>
+
     </div>
 
   </div>
