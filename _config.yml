@@ -18,25 +18,24 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Seven Laws | Torá y Leyes Noájidas para el Crecimiento Personal"
+title: "Seven Laws | Torá, Leyes Noájidas y Fundamentos para el Hombre de Hoy"
 email: stairway.cl@gmail.com
 description: >-
-  Estudio profundo de las Siete Leyes Universales (Leyes Noájidas) y la sabiduría de la Torá.
-  Enseñanzas claras y reflexivas dirigidas a una audiencia amplia que busca inspiración,
-  ética y herramientas prácticas para el crecimiento personal y espiritual.
-  La fuente definitiva de instrucción para vivir una vida de plenitud y desarrollo.
+  Exploración profunda de las Siete Leyes Universales (Leyes Noájidas) y fundamentos de fe de la Torá. Una guía para el crecimiento personal, el rol del hombre y la sabiduría en la interpretación de sueños.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.seven-laws.onrender.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
 github_username:  stairwaycl
 
-social_image: https://res.cloudinary.com/ddky4mrmg/image/upload/v1762559661/jekyll-uploads/cssnrjuyzoeseqedozgo.png
+social_image: https://res.cloudinary.com/ddky4mrmg/image/upload/v1762946036/sevenlaws/a4lvfdfw2eurimzr6cdq.png
+
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 paginate: 5
 paginate_path: "/page:num/"

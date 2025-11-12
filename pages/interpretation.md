@@ -4,6 +4,23 @@ title: "Interpretación de Sueños"
 tags: [Berajot, Misticismo, Psicología]
 permalink: /interpretation/
 ---
+{% comment %}
+    1. Accedemos a los datos usando 'site.data.social_images'
+    2. Usamos la clave 'dreams' para obtener el objeto de la imagen.
+{% endcomment %}
+
+{% assign img_data = site.data.social_images.dreams %}
+
+{% comment %}
+    Concatenamos (unimos) las tres partes. Usamos las claves exactas de tu YAML:
+    img_data.link
+    img_data.cloudinary
+    img_data.baseurl
+{% endcomment %}
+
+{% assign cloudinary_url = img_data.link | append: img_data.cloudinary | append: img_data.baseurl | absolute_url %}
+
+<img src="{{ cloudinary_url }}" alt="Imagen optimizada de Interpretación de Sueños" class="d-block mx-auto">
 
 Todo cuanto acontece al hombre en esta realidad física se revela previamente a través de sueños, como expone Rabi Shimon bar Iojai:
 

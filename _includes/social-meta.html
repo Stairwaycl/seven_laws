@@ -1,0 +1,36 @@
+{% comment %}
+    1. Intentamos obtener el nombre de la imagen del front matter del post.
+    La variable será 'page.social_image_name'.
+
+    2. Si 'page.social_image_name' existe, buscamos el objeto
+    completo dentro de site.data.images.social_image
+    que coincida con ese nombre.
+{% endcomment %}
+
+{% assign social_image_link = nil %}
+
+{% if page.social_image_name %}
+  {% assign image_name_to_find = page.social_image_name %}
+
+  {% comment %}
+    Iteramos sobre la lista de imágenes sociales para encontrar
+    la que tiene el nombre que buscamos.
+  {% endcomment %}
+  {% for image in site.data.images.social_image %}
+    {% if image.name == image_name_to_find %}
+      {% assign social_image_link = image.link %}
+      {% break %}  {% comment %} Una vez encontrada, salimos del bucle para ahorrar tiempo. {% endcomment %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% comment %}
+    3. Usamos el enlace encontrado (social_image_link) para la metaetiqueta Open Graph.
+    Si no se encontró, podrías usar una imagen por defecto (site.default_social_image).
+{% endcomment %}
+
+{% if social_image_link %}
+  <meta property="og:image" content="{{ social_image_link }}">
+{% else %}
+  <meta property="og:image" content="{{ site.default_social_image }}">
+{% endif %}
