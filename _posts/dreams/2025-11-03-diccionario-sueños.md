@@ -45,6 +45,10 @@ Las imágenes oníricas, los símbolos que visualizamos en nuestros sueños, tie
 
 {% include call-bad-dreams.html %}
 
+## Dinero
+El que sueña que encuentra monedas o dinero de un tesoro tendrá mucha satisfacción. En cambio, soñar que las encuentra rotas, o si luego las perdió, es indicador de desgracia.
+
+
 ## Muerte
 Soñar que se muere **es un buen indicio para el soñante**, o bien, se incrementarán sus años de vida. Lo mismo, si sueña que un pariente fallece.
 
