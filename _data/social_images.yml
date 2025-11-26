@@ -2,3 +2,8 @@ dreams:
   link: https://res.cloudinary.com/ddky4mrmg/image/upload/
   baseurl: v1762945563/sevenlaws/v1hmv1rj0h10ltzpyvne.png
   cloudinary: c_scale,w_500/
+
+logo:
+  link: https://res.cloudinary.com/ddky4mrmg/image/upload/
+  baseurl: v1762817733/stairway/uusw6shefxxlno11u8wk.png # <-- Cambia esto a la ruta de tu 7lawslogo en Cloudinary
+  cloudinary: c_scale,w_50/

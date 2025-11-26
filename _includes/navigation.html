@@ -2,14 +2,15 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary p-2">
   <div class="container-fluid">
 
-    <a href="/" class="navbar-brand text-decoration-none text-dark d-flex align-items-center">
-      <img
-        src="/assets/images/7lawslogo.png"
-        alt="7Laws Logo"
-        class="me-2"
-        style="height: 28px; width: auto;"
-      >
-    </a>
+<a href="/" class="navbar-brand text-decoration-none text-dark d-flex align-items-center">
+    {% assign logo_img = site.data.social_images.logo %}
+
+    <img
+      src="{{ logo_img.link }}{{ logo_img.cloudinary }}{{ logo_img.baseurl }}"
+      alt="7Laws Logo"
+      class="me-2"
+    >
+</a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
