@@ -2,7 +2,7 @@
 layout: post
 title: "Diccionario de Sueños"
 category: sueños
-date:   2025-11-03 03:53:45 -0300
+date:   2025-11-25 03:53:45 -0300
 description: Diccionario de sueños según el Talmud. ¡Cuidado! La interpretación depende primero del día del calendario. Descubre el significado de soñar con la muerte, granadas o dientes, etc.
 ---
 

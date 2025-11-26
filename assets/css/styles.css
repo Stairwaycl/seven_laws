@@ -1,28 +1,34 @@
 body {
-  background-color: #ffe6ff;
+  /* 🛑 IMPORTANTE: Ahora el color de fondo está en #page-background (z-index: 0). */
+  /* Mantener el background-color en el body puede interferir con algunos navegadores. */
+  /* Lo dejamos comentado o eliminamos la línea de color si no es necesaria. */
 }
 
 h1 {
   padding-top: 0.3em;
-  font-size: 2.5rem; /* Tamaño de fuente grande */
-  font-weight: 300;  /* Peso de fuente ligero (por defecto en display) */
-  line-height: 1.2;  /* Altura de línea estándar */
-
-  /* --- Equivalente a 'text-center' --- */
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
   text-align: center;
-
-  /* --- Equivalente a 'mb-4' --- */
-  /* En Bootstrap, 4 es típicamente igual a 1.5rem */
   margin-bottom: 1.5rem;
-
-  /* Aseguramos que el margen superior y laterales sean 0,
-      ya que la clase mb-4 solo establece el margen inferior */
   margin-top: 0;
+}
+
+li {
+  text-align: justify;
+  font-size: 1.1em;
 }
 
 p {
   text-align: justify;
+  font-size: 1.2em;
+}
 
+/* Estilos de las tarjetas */
+.card {
+    /* Mantenemos este z-index, pero la nueva clase en el contenedor raíz es la que garantiza la elevación */
+    position: relative;
+    z-index: 20;
 }
 
 .card-body {
@@ -34,25 +40,16 @@ p {
   background-color: #020e39;
 }
 
-.container-posts {
-  background-color: #F5F3F5
+
+/* --- NAVBAR SCROLL HIDE/SHOW LOGIC --- */
+.fixed-top {
+  transition: top 0.3s;
 }
 
-/*
- * 1. CLASE BASE: Asegura que la transición sea suave.
- * La transición debe aplicarse a la propiedad 'transform' o 'top' (usamos top en este caso).
- */
- .fixed-top {
-  transition: top 0.3s; /* Transición suave de 0.3 segundos */
-}
-
-/*
-* 2. CLASE DE OCULTACIÓN: Mueve la barra fuera del viewport.
-* Definimos 'top' para que esté justo arriba del borde superior.
-*/
 .nav-hidden {
-  top: -65px; /* Ajusta este valor. Debe ser mayor que la altura de tu barra de navegación. */
+  top: -65px; /* Asegúrate de que sea mayor que la altura de tu barra */
 }
+
 
 .bonheur-royale-regular {
   font-family: "Bonheur Royale", cursive;
@@ -63,48 +60,96 @@ p {
 
 /* Estilo para las citas de bloque (Blockquotes) */
 blockquote {
-  border-left: 4px solid #8b0000; /* Color vino o rojo oscuro */
-  background-color: #f9f9f9; /* Un fondo ligeramente gris */
-  margin: 1.5em 0; /* Espaciado superior e inferior */
-  padding: 0.5em 10px; /* Espaciado interno */
-  font-style: italic; /* Letra cursiva para citas */
-  color: #555; /* Un color de texto más suave */
+  border-left: 4px solid #8b0000;
+  background-color: #f9f9f9;
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  font-style: italic;
+  color: #555;
 }
 
-/* Este CSS mejora el efecto hover en los enlaces individuales del menú */
-
+/* Estilos del menú de navegación */
 .nav-item {
-  /* Agrega una transición suave para todos los cambios de estilo */
   transition: background-color 0.2s, color 0.2s;
 }
 
-/* Estilo al pasar el cursor (hover) */
 .nav-item:hover {
-  /* 1. Cambia el color de fondo */
-  background-color:  #d4cad4; /* Color azul primario de Bootstrap (puedes cambiarlo) */
-
-  /* 2. Cambia el color del texto para que contraste con el nuevo fondo */
-  color:  #F5F3F5; /* Texto blanco */
-
-  /* 3. Asegura que no haya un box-shadow no deseado */
+  background-color:  #d4cad4;
+  color:  #F5F3F5;
   box-shadow: none;
 }
 
-/* Estilo al enfocar (focus) (importante para accesibilidad) */
 .nav-item:focus {
-  /* Generalmente es buena práctica mantener los estilos de hover y focus similares */
   background-color: #007bff;
   color:  #F5F3F5;
-
-  /* Puedes mantener el outline aquí o quitarlo si ya lo hiciste antes */
   outline: 0;
 }
 
 .alert-icon {
-  /* Define un tamaño fijo. Puedes ajustar 1.25rem o 1em según tu gusto */
   width: 1.25rem !important;
   height: 1.25rem !important;
-
-  /* Aseguramos que se alinee con el texto si hay algún problema */
   vertical-align: -0.125em;
+}
+
+
+/* ---------------------------------------------------- */
+/* --- ESTILOS PARA EL GARABATO SVG (SCROLL DRAWING) --- */
+/* ---------------------------------------------------- */
+
+/* 1. Fondo de color sólido (Capa 0) */
+#page-background {
+    background-color: #ffe6ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Capa más baja */
+}
+
+/* 2. SVG Garabato (Capa 1) */
+/* 2. SVG Garabato (Capa 1) */
+#scroll-path {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1; /* Por encima del fondo de color */
+
+    pointer-events: none;
+    opacity: 0.7; /* Aumentamos un poco la opacidad para que el morado sea más notorio */
+}
+
+#path-line {
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    transition: none;
+}
+
+/* 3. Contenedor Principal del Layout (Capa 10) */
+/* 3. Contenedor Principal del Layout (Capa 10) */
+.container-fluid.shadow-lg {
+    position: relative;
+    z-index: 10;
+
+    /* 🛑 CAMBIO CLAVE: Quitamos el color de fondo para que se vea el SVG (z-index: 1) */
+    background-color: transparent !important;
+
+    /* Aseguramos que la sombra siga funcionando aunque el fondo sea transparente */
+    box-shadow: none !important;
+}
+
+/* ---------------------------------------------------- */
+/* --- SOLUCIÓN FINAL: CONTEXTO DE APILAMIENTO DE CONTENIDO --- */
+/* ---------------------------------------------------- */
+
+.content-wrapper {
+    /* 🛑 CRÍTICO: CREA UN NUEVO CONTEXTO DE APILAMIENTO */
+    position: relative;
+
+    /* Le damos un z-index muy alto para asegurar que todo el contenido del index.html
+       flote sobre el SVG (z-index: 1) y el container padre (z-index: 10). */
+    z-index: 50;
 }

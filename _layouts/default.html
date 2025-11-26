@@ -1,6 +1,5 @@
 <html>
 <head>
-<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2RQZML4SRH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -22,6 +21,8 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
 <link rel="stylesheet" href="/assets/css/styles.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,25 +35,51 @@
 {% endif %}
 
 {% feed_meta %}
-{% seo %} <!--- Este plugin se encarga automáticamente de generar los meta tags Open Graph (para Facebook y WhatsApp, entre otros) y Twitter Cards, siempre y cuando hayas configurado correctamente la información en tu _config.yml y en el front matter de tus posts. -->
+{% seo %}
 <meta name="google-site-verification" content="lBIgVfsUr5F_T_KrfOJzzkxCTZBnMIrNPw-J1tvUKHA" />
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5089948218661025"
+<script async src="https://pagead2.googysyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5089948218661025"
      crossorigin="anonymous"></script>
 
 
 </head>
 <body class="pt-5 pb-5">
 
+  <div id="page-background"></div>
+
+<svg id="scroll-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 3000" preserveAspectRatio="xMidYMin slice">
+
+      <path id="path-line-1"
+            /* Hemos extendido los puntos de control X (400, 600) para hacerla más horizontal */
+            d="M 50 0 Q 400 500, 200 1000 T 800 2000 Q 600 2500, 950 3000"
+            stroke="#b7b7b7" /* Púrpura */
+            stroke-width="5"
+            fill="none"/>
+
+      <path id="path-line-2"
+            /* Puntos de control más hacia los bordes (100, 900) */
+            d="M 100 0 C 100 500, 900 1000, 800 1500"
+            stroke="#6A5ACD"
+            stroke-width="3" /* Más delgada */
+            fill="none"/>
+
+      <path id="path-line-3"
+            /* Curva con mayor oscilación lateral (40, 960) */
+            d="M 20 0 Q 500 700, 40 1500 T 960 3000"
+            stroke="#6A5ACD"
+            stroke-width="7" /* Más gruesa */
+            fill="none"/>
+
+  </svg>
+
   <nav class="fixed-top shadow">
     {% include navigation.html %}
 
   </nav>
 
-  <div class="container p-4 shadow-lg">
+  <div class="container-fluid p-4 shadow-lg">
     <h1>{{page.title}}</h1>
     {{ content }}
-
   </div>
 
 
@@ -67,16 +94,13 @@
     // Variables para seguimiento
     var prevScrollpos = window.pageYOffset;
     var navbar = document.querySelector('.fixed-top');
-    var navHeight = navbar.offsetHeight; // Obtener la altura actual de la barra de navegación
+    var navHeight = navbar.offsetHeight;
 
     window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
 
-        // --- Lógica de Detección ---
-
         // 1. Desplazándose hacia ABAJO (Ocultar)
         if (prevScrollpos < currentScrollPos && currentScrollPos > navHeight) {
-            // Se está moviendo hacia abajo Y no estamos cerca de la parte superior (evita que se esconda al inicio)
             navbar.style.top = '-' + navHeight + 'px'; // Ocultar
         }
         // 2. Desplazándose hacia ARRIBA o está en la parte superior (Mostrar)
@@ -84,9 +108,86 @@
             navbar.style.top = '0'; // Mostrar
         }
 
-        // Actualizar la posición previa para la siguiente iteración
         prevScrollpos = currentScrollPos;
     }
   </script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script>
+    // Inicialización de ScrollReveal
+    ScrollReveal().reveal('.reveal-card', {
+      origin: 'bottom',
+      distance: '100px',
+      duration: 800,
+      scale: 0.85,
+      interval: 100, // Efecto cascada
+      reset: false
+    });
+  </script>
+
+<script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+
+          // 🛑 CRÍTICO: BUSCAMOS LOS NUEVOS ID DE LAS TRES LÍNEAS
+          const pathLines = [
+              document.getElementById('path-line-1'),
+              document.getElementById('path-line-2'),
+              document.getElementById('path-line-3')
+          ].filter(el => el); // Filtra los nulos si alguno falta
+
+          if (pathLines.length === 0) {
+              console.error("Error: No se encontró ninguna línea SVG. Asegúrate de que los ID sean correctos.");
+              return;
+          }
+
+          // Inicializamos cada línea y guardamos su longitud
+          const lineData = pathLines.map(pathLine => {
+              let length;
+              try {
+                  length = pathLine.getTotalLength();
+              } catch (e) {
+                  console.error("No se pudo obtener la longitud de una línea SVG.", e);
+                  return null;
+              }
+
+              // Inicializar el trazo (deja la línea invisible al inicio)
+              pathLine.style.strokeDasharray = length + ' ' + length;
+              pathLine.style.strokeDashoffset = length;
+
+              return { element: pathLine, length: length };
+          }).filter(data => data !== null);
+
+
+          function drawOnScroll() {
+
+              const SLOW_FACTOR = 7.0; // 🛑 CONTROL DE VELOCIDAD: Puedes ajustar este valor.
+
+              let totalScrollHeight = document.body.scrollHeight - window.innerHeight;
+
+              if (totalScrollHeight <= 0) {
+                  totalScrollHeight = 1;
+              }
+
+              totalScrollHeight = totalScrollHeight * SLOW_FACTOR;
+              const scrollPosition = window.pageYOffset;
+
+              // Porcentaje de dibujo
+              const scrollPercent = Math.min(1, scrollPosition / totalScrollHeight);
+
+              // Dibujamos CADA línea individualmente
+              lineData.forEach(data => {
+                  const drawOffset = data.length * (1 - scrollPercent);
+                  data.element.style.strokeDashoffset = drawOffset;
+              });
+          }
+
+          window.addEventListener('scroll', drawOnScroll);
+          window.addEventListener('resize', drawOnScroll);
+
+          drawOnScroll();
+      });
+  </script>
 </body>
+
 </html>

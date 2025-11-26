@@ -1,13 +1,12 @@
 ---
 # IMPORTANTE: Con esto le dices a Jekyll que use la configuración de paginación.
 layout: default
-title: "Posts"
+title: "Publicaciones"
 ---
-
-
-<div class="container my-5">
+<div class="container-fluid my-5 content-wrapper">
 
   <div class="row row-cols-1 g-4">
+    {{paginator.total_posts}} Publicaciones
 
     {% for post in paginator.posts %}
 
@@ -16,7 +15,7 @@ title: "Posts"
 
       {% if post_date <= current_date %}
 
-        <div class="col">
+        <div class="col reveal-card">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
 
@@ -29,7 +28,7 @@ title: "Posts"
                 {{ display_date | date: "%d %b %Y" }}
               </h6>
 
-              <h5 class="card-title">{{ post.title }}</h5>
+              <h4 class="text-center">{{ post.title }}</h4>
 
               <p class="card-text">{{ post.excerpt }}</p>
 

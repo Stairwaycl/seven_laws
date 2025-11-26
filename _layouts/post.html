@@ -16,6 +16,13 @@ layout: default
   {% endif %}
 </p>
 
-<div class="container rounded-2 p-3 shadow-lg container-posts">
+<div class="container rounded-2 p-3 shadow-lg">
+
+  {% if page.category == 'siete-leyes' %}
+    <a href="{{ site.baseurl }}/siete-leyes/" class="btn btn-primary mb-3">
+      ← Volver a Siete Leyes
+    </a>
+  {% endif %}
+
   {{ content }}
 </div>

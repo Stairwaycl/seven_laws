@@ -1,0 +1,97 @@
+---
+layout: default
+permalink: /13-principios/
+title: "13 Principios de fe"
+---
+
+<div class="container-fluid mt-5 content-wrapper">
+
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-8">
+
+      <p>
+        En su influyente <strong>Comentario a la Mishná</strong> (Tratado Sanhedrín 10), el gran sabio Rabí Moshé ben Maimón, conocido como <strong>Maimónides</strong> (o el <strong>Rambam</strong>), articuló los <strong>Trece Principios de la Fe Judía</strong> (<em>Ikarei HaEmuná</em>). Estos principios se han convertido en la base doctrinal del judaísmo a lo largo de los siglos.
+      </p>
+      <p>
+        A continuación, exploramos el texto y la esencia de los <strong>fundamentos</strong> de la fe.
+      </p>
+
+      <hr>
+
+      <h2 class="text-center mt-4">Principios sobre D-s</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent">
+          <strong>La Existencia de D-s</strong> (Metziut HaShem): Creer que existe un Creador, la Causa de todo.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Unidad de D-s</strong> (Yijúd HaShem): Creer que D-s es uno en una unidad sin paralelo.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Incorporeidad de D-s</strong> (She'Ein Lo Guf): Creer que D-s no es físico, no tiene cuerpo ni forma.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Eternidad de D-s</strong> (Kidmut HaShem): Creer que D-s es el primero y el último, y que es eterno.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>Solo a D-s se Debe Rezar</strong> (Tefilah Le'HaShem Levadó): Creer que solo a D-s se debe dirigir el culto y la oración.
+        </li>
+      </ul>
+
+      <h2 class="text-center mt-4">Principios sobre la Profecía y Revelación</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent">
+          <strong>La Verdad de la Profecía</strong> (Nevuáh): Creer que D-s se comunica con los humanos a través de la profecía.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Supremacía de Moshé</strong> (Nevu'at Moshé): Creer que la profecía de Moshé (Moisés) fue la mayor y más verdadera de todas.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Inmutabilidad de la Torá</strong> (Torat Moshé): Creer que la Torá que tenemos hoy es exactamente la que le fue entregada a Moshé, y que nunca será cambiada.
+        </li>
+      </ul>
+
+      <h2 class="text-center mt-4">Principios sobre la Retribución</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent">
+          <strong>La Permanencia de la Torá</strong> (Lo Titjádef): Creer que la Torá (la de Moshé) nunca será reemplazada o abolida por otra.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Omnisciencia de D-s</strong> (Yedi'at HaShem): Creer que D-s conoce los pensamientos y las acciones de los humanos (Su providencia).
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Recompensa y el Castigo</strong> (Shjájar Va'Onesh): Creer que D-s recompensa a los que cumplen Sus mandamientos y castiga a los que los transgreden.
+        </li>
+      </ul>
+
+      <h2 class="text-center mt-4">Principios sobre la Redención</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent">
+          <strong>La Venida del Mashíaj</strong> (Bi'at HaMashíaj): Creer en la llegada del Mesías, y aunque se demore, debemos esperar Su venida todos los días.
+        </li>
+        <li class="list-group-item bg-transparent">
+          <strong>La Resurrección de los Muertos</strong> (Tjiyat HaMetim): Creer que habrá una resurrección de los muertos en el futuro.
+        </li>
+      </ul>
+
+      <hr class="my-5">
+
+      <h2 class="text-center">Posts Relacionados</h2>
+      <div class="row">
+        <div class="col-12">
+            <ul>
+              {% for post in site.posts %}
+
+                {% if post.category == 'fundamentos' %}
+                  <li>
+                    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                    <p>{{ post.excerpt }}</p>
+                  </li>
+                {% endif %}
+
+              {% endfor %}
+            </ul>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>

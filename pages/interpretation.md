@@ -22,6 +22,7 @@ permalink: /interpretation/
 
 <img src="{{ cloudinary_url }}" alt="Imagen optimizada de Interpretación de Sueños" class="d-block mx-auto">
 
+
 Todo cuanto acontece al hombre en esta realidad física se revela previamente a través de sueños, como expone Rabi Shimon bar Iojai:
 
 _“Treinta días antes de que una nación se transforme en potencia o deba enfrentar alguna desgracia, los niños predicen el evento (como cuando, de modo aparentemente casual, citan alguna frase o versículo que aluda a un hecho inesperado), o a veces la gente más simple lo predice, o incluso los pájaros, a través de conductas extrañas. Pero nadie presta atención, pues nadie comprende tales mensajes. Cuando la nación en cuestión es meritoria, de lo Alto comunican el eventual hecho (a través de sueños) a los líderes virtuosos de la generación para que difundan la advertencia; y así, cuando la gente toma conocimiento de la eventual desgracia retornan al Creador”_ (Zohar, parte II, 6b).
@@ -43,15 +44,15 @@ En su _Die Traumdeutung (“Interpretación de los Sueños”)_ en una nota al p
 Y estas son las fuentes que usamos para estudio.
 
 
+-----------------
 
-## Posts
 
-<ul>
+<ul style="list-style: none; padding: 0;">
   {% for post in site.posts %}
 
     {% if post.category == 'sueños' %}
       <li>
-        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <h2 class="text-center"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt }}</p>
       </li>
     {% endif %}
