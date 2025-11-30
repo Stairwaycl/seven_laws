@@ -3,7 +3,8 @@ layout: default
 ---
 
 <p>
-  Publicado: {{ page.date | date_to_string }}
+  Publicado
+  por: <a href="https://www.youtube.com/@npcrecer" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><i class="fab fa-youtube"></i> Narraciones para Crecer </a> | {{ page.date | date_to_string }}
 
   {% comment %}
     Comprueba si existe la fecha de modificación Y si es diferente a la fecha de publicación original.

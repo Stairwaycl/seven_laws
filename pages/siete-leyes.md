@@ -8,7 +8,8 @@ Leyes encomendadas a las naciones del mundo por el Uno y Único:
 
 1. Prohibición de la Idolatría
 
-2. Prohibición de la Blasfemia
+2. [Prohibición de la Blasfemia ]({% post_url 2025-11-30-blasfemia %})
+
 
 3. [Prohibición del Asesinato y Daños]({% post_url 2025-11-26-no-asesinar %})
 
