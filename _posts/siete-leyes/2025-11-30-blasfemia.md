@@ -1,10 +1,24 @@
 ---
 layout: post
-title: "Resumen: La Prohibición de la Blasfemia y el Respeto al Nombre de Dios"
+title: "La Prohibición de Blasfemar"
 tag: siete-leyes
 ---
+A continuación presento un resumen escrito y visual sobre la Parte III de The Divine Code, enfocado en la prohibición de la blasfemia y las leyes de los votos.
 
-A continuación presento un resumen visual y escrito sobre la parte 3 del Código Divino (Divine Code), enfocado en la prohibición de la blasfemia y las leyes de los votos.
+# **4 prohibiciones y 1 obligación.**
+
+* **Prohibiciones**
+1. No maldecir a Dios ni a otra persona
+2. No mostrar falta de respeto a Dios. Incluye no jurar en vano.
+3. No destruir un escrito con el nombre de Dios, ni algo que fue apartado para algo sagrado, como un libro sagrado o una sinagoga.
+4. No jurar en falso. Incluye no mentir
+
+* **Obligaciones**
+1. Cumplir con tus votos y promesas.
+
+----
+
+## Resumen de The Divine Code - Parte III de la _Prohibición de Blasfemar_
 
 <!-- CÓDIGO VIDEO YOUTUBE OPTIMIZADO PARA SEO Y VELOCIDAD -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
@@ -50,6 +64,3 @@ Si una persona se arrepiente de un voto debido a angustia o situaciones imprevis
 *   **Proceso:** Puede solicitar la anulación ante una persona experta en estos preceptos (un gentil experto puede anular el voto de otro).
 *   **Requisito:** El votante debe expresar arrepentimiento y el experto declara que está "permitido" o "libre".
 *   **Límites:** No se pueden anular votos basados en el consentimiento público.
-
----
-*Este contenido es un resumen educativo basado en The Divine Code.*

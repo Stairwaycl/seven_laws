@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "No Comer Carne separada de un animal viviendo"
-category: siete-leyes
+tag: siete-leyes
 ---
 
 _Incluye no hacer sufrir a una criatura, aparear diferentes especies o injertar especies diferentes_

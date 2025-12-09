@@ -4,9 +4,10 @@ permalink: /siete-leyes/
 ---
 # 📜 Las Siete Leyes de Noaj
 
-Leyes encomendadas a las naciones del mundo por el Uno y Único:
+Rab Moshé Weiner separa _**Las 7 Leyes encomendadas a las naciones del mundo**_ por el Uno y Único en _**90 leyes**_, tanto prohibiciones como obligaciones, las que veremos periódicamente.
 
-1. Prohibición de la Idolatría
+
+1. [Prohibición de la Idolatría]({% post_url 2025-12-08-idolatria %})
 
 2. [Prohibición de la Blasfemia ]({% post_url 2025-11-30-blasfemia %})
 
@@ -15,12 +16,16 @@ Leyes encomendadas a las naciones del mundo por el Uno y Único:
 
 4. Prohibición de las Relaciones Sexuales Ilícitas
 
-5. Prohibición del Robo
+5. [Prohibición del Robo]({% post_url 2025-12-09-robo %})
 
 6.  [Prohibición de Comer la Carne de un Animal Vivo]({%post_url 2025-10-30-no-comer-carne-separada %})
 
 
 7. Mandamiento de Establecer Tribunales de Justicia
+
+---
+
+__Siguenos en todas las plataformas para no perderte nada__.
 
 <!--
 ## Post

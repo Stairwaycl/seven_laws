@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "No asesinar ni dañar"
-category: siete-leyes
+tag: siete-leyes
 ---
 
-Estas son las 6 prohibiciones y 4 obligaciones que son incluidas en este mandamiento divino a las naciones.
+Estas son las 6 prohibiciones y 4 obligaciones que están incluidas en este mandamiento divino a las naciones.
 
-## **6 prohibiciones y 4 obligación.**
+## **6 prohibiciones y 4 obligaciones.**
 
 * **Prohibiciones**
 
