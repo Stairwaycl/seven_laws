@@ -1,12 +1,27 @@
 ---
 # IMPORTANTE: Con esto le dices a Jekyll que use la configuración de paginación.
 layout: default
-title: "Últimas Publicaciones"
+title: "¡Bienvenido a Seven Laws!"
 ---
 <div class="container-fluid my-5 content-wrapper">
 
-  <div class="row row-cols-1 g-4">
-    {{paginator.total_posts}} Publicaciones
+  <div class="container">
+    <h2>Mapa Conceptual General</h2>
+
+      <p>Éste es un resumen no detallado pero anexado a todos los conceptos estudiados, es actualizado seguidamente.</p>
+
+      <div style="border-radius: 8px; box-shadow: rgba(63, 69, 81, 0.16) 0px 2px 8px 0px; height: 0px; margin-bottom: 0.9em; margin-top: 1.6em; overflow: hidden; padding-bottom: 0px; padding-top: 100%; position: relative; width: 100%; will-change: transform;">
+        <iframe allow="fullscreen" allowfullscreen="allowfullscreen" loading="lazy" src="https://www.canva.com/design/DAE2TEO6doY/Zz1L3SKQSf0lEuXICmbrDQ/view?embed" style="border: none; height: 100%; left: 0; margin: 0; padding: 0; position: absolute; top: 0; width: 100%;">
+        </iframe>
+      </div>
+      <a href="https://www.canva.com/design/DAE2TEO6doY/Zz1L3SKQSf0lEuXICmbrDQ/view?utm_content=DAE2TEO6doY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" rel="noopener" target="_blank">Mapa Conceptual Tora</a>
+  </div>
+
+
+
+  <div class="row row-cols-1 g-4 pt-5">
+    <h1> Últimos Posts</h1>
+    <p>{{paginator.total_posts}} Publicaciones</p>
 
     {% for post in paginator.posts %}
 
